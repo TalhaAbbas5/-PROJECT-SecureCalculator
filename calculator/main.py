@@ -7,4 +7,4 @@ def sub(a, b):
 
 def run_command(cmd):
     # ❌ Vulnerable: shell=True allows command injection
-    return subprocess.Popen(cmd, shell=True)
+    return subprocess.Popen(cmd, shell=False)
